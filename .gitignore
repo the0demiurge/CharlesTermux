@@ -1,0 +1,8 @@
+*~
+*.swp
+*.save
+*.bak
+.git
+anacron
+.placeholder
+0anacron
