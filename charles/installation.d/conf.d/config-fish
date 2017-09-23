@@ -1,0 +1,36 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+CONF_PATH=~/.config/fish/conf.d/charles.fish
+echo '# This is the Charles Scripts Configuration.'|tee $CONF_PATH
+echo 'set -g CHARLES_HOME ~/.local/share/CharlesTermux/charles' >> $CONF_PATH
+echo 'set -g CHARLES_BACKUP $CHARLES_HOME/packages.list.d' >> $CONF_PATH
+
+echo "source \$CHARLES_HOME/shell.rc.d/init.fish" >> $CONF_PATH
+
+echo "source \$HOME/.config/fish/conf.d/*" >> $HOME/.config/fish/config.fish
+
+#ABBRS
+fish -c "abbr ... 'cd ...'"
+fish -c "abbr c 'clear; cd'"
+fish -c "abbr cl 'cd ..;ls'"
+fish -c "abbr eg 'grep -E'"
+fish -c "abbr gaa 'git add -A'"
+fish -c "abbr gb 'git branch -c'"
+fish -c "abbr gck 'git checkout'"
+fish -c "abbr gcm 'git commit -m'"
+fish -c "abbr gl 'git l'"
+fish -c "abbr gm 'git merge --no-ff'"
+fish -c "abbr gp 'git push'"
+fish -c "abbr gpl 'git pull'"
+fish -c "abbr gst 'git status'"
+fish -c "abbr histg 'history | grep'"
+fish -c "abbr i 'ipython --no-confirm-exit --no-banner --pprint -i --pylab=auto'"
+fish -c "abbr l 'ls --color=auto'"
+fish -c "abbr la 'ls --almost-all --color=auto'"
+fish -c "abbr le 'ls --almost-all --color=auto|egrep'"
+fish -c "abbr lg 'ls --almost-all --color=auto|grep'"
+fish -c "abbr ll 'ls --almost-all -lh --color=auto'"
+fish -c "abbr o 'xdg-open'"
+fish -c "abbr p 'python'"
+fish -c "abbr pdb 'python -mpowerline.bindings.pdb'"
+

@@ -1,0 +1,20 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# this script automatically install an app using APT and backup the software list to ~/.backup/
+APPS_BACKUP_PATH=~/.local/share/CharlesTermux/charles/packages.list.d/termux.list
+mkdir -p ~/.local/share/CharlesTermux/charles/packages.list.d
+
+for app in $@;do
+	if [ -n "$app" ]; then
+        false
+        while [ $? -ne 0 -a $? -ne 100 ];do
+            apt install -y $app --allow-unauthenticated
+        done
+		if [ $? = 0 ]; then
+			echo $app >> $APPS_BACKUP_PATH
+		fi
+	fi
+done
+
+sort -su $APPS_BACKUP_PATH > ~/.cache/backuplist4apps -o $APPS_BACKUP_PATH
+rm ~/.cache/backuplist4apps
+cat $APPS_BACKUP_PATH
