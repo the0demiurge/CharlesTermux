@@ -1,7 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 apt update
-apt install -y git fish curl apt-transport-https gawk tmux vim-python python cowsay
+apt install -y git fish curl apt-transport-https gawk tmux vim-python python cowsay sl fortune
 pip install ipython powerline-status
 clear
 
