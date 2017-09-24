@@ -1,6 +1,8 @@
 aria2
 binutils
+boost
 clang
+cmake
 cmatrix
 coreutils
 cowsay

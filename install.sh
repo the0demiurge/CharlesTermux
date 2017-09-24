@@ -30,6 +30,7 @@ echo 'After installed oh-my-fish, you can run `omf-backup` to backup omf list re
 read
 
 termux-setup-storage
+curl -L https://its-pointless.github.io/setup-pointless-repo.sh | sh
 curl -L https://get.oh-my.fish | fish
 
 echo Done!
