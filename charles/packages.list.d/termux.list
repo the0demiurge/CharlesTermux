@@ -1,11 +1,13 @@
 aria2
 binutils
 clang
+cmatrix
 coreutils
 cowsay
 curl
 elinks
 emacs
+figlet
 findutils
 fortune
 fzf
@@ -27,6 +29,7 @@ scipy
 screenfetch
 sl
 texlive
+toilet
 tree
 unzip
 vim-python

@@ -37,7 +37,7 @@ function g
     if git push
         sl -e
         for i in (seq 25);echo "";end
-        fortune
+        fortune|cowsay
     else
         cowsay -f bong "push失败！！！请重新push！！！"
     end
