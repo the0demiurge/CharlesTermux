@@ -1,6 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
 CONF_PATH=~/.config/fish/conf.d/charles.fish
+mkdir ~/.config/fish/conf.d
+touch $CONF_PATH
+
 echo '# This is the Charles Scripts Configuration.'|tee $CONF_PATH
 echo 'set -g CHARLES_HOME ~/.local/share/CharlesTermux/charles' >> $CONF_PATH
 echo 'set -g CHARLES_BACKUP $CHARLES_HOME/packages.list.d' >> $CONF_PATH
