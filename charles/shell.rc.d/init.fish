@@ -28,9 +28,9 @@ end
 
 function g
     git add -A
-    git status
     git diff --cached
     echo "type the commits or cancel with Ctrl+C"
+    git status
     read COMMIT
     git commit -m "$argv $COMMIT"
     git log -1 HEAD
@@ -39,7 +39,7 @@ function g
         for i in (seq 25);echo "";end
         fortune
     else
-        cowsay "push失败！！！请重新push！！！"
+        cowsay -f bong "push失败！！！请重新push！！！"
     end
 end
 
