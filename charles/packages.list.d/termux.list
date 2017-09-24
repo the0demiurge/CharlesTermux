@@ -4,6 +4,7 @@ clang
 coreutils
 cowsay
 curl
+elinks
 emacs
 findutils
 fortune
@@ -26,4 +27,5 @@ sl
 texlive
 tree
 vim-python
+w3m
 xz-utils
