@@ -10,8 +10,11 @@ if [ -d "$HOME/.termux" ]; then
 fi
 
 # Setting sources
-echo '# The termux repository mirror from TUNA:'|tee $HOME/../usr/etc/apt/source.list.d/tuna.list
-echo 'deb [arch=all,arm] http://mirrors.tuna.tsinghua.edu.cn/termux stable main'|tee -a $HOME/../usr/etc/apt/source.list.d/tuna.list
+TUNA=$HOME/../usr/etc/apt/sources.list.d/tuna.list
+touch $TUNA
+echo '# The termux repository mirror from TUNA:'|tee $TUNA
+echo 'deb [arch=all,arm] http://mirrors.tuna.tsinghua.edu.cn/termux stable main'|tee -a $TUNA
+
 
 git clone https://github.com/the0demiurge/CharlesTermux.git $HOME/.local/share/CharlesTermux
 

@@ -1,5 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
 BASHRC=~/../usr/etc/bash.bashrc
-echo "export CHARLES_HOME=$HOME/.local/share/CharlesScripts/charles"|tee -a $BASHRC
+echo "export CHARLES_HOME=$HOME/.local/share/CharlesTermux/charles"|tee -a $BASHRC
 echo 'export CHARLES_BACKUP=$CHARLES_HOME/packages.list.d' >> $BASHRC
 echo 'source $CHARLES_HOME/shell.rc.d/init.shell' >> $BASHRC

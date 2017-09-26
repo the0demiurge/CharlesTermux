@@ -16,10 +16,12 @@ fzf
 gawk
 gcc-6
 gcc-7
+gdb
 gnutils
 graphviz
 gzip
 htop
+libatlas
 mlocate
 mtools
 nmap
