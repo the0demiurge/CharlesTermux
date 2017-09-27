@@ -32,6 +32,8 @@ p7zip
 scipy
 screenfetch
 sl
+termux-api
+termux-exec
 texlive
 toilet
 tree
