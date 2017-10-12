@@ -7,6 +7,7 @@ cmatrix
 coreutils
 cowsay
 curl
+dnsutils
 elinks
 emacs
 figlet
