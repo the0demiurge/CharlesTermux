@@ -23,6 +23,7 @@ graphviz
 gzip
 htop
 libatlas
+mariadb
 mlocate
 mtools
 nmap
