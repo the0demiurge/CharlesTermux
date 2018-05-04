@@ -18,6 +18,7 @@ gawk
 gcc-6
 gcc-7
 gdb
+gnupg
 gnutils
 graphviz
 gzip
