@@ -10,6 +10,7 @@ if [ -d "$HOME/.termux" ]; then
 fi
 
 # Setting sources
+mkdir -p $HOME/../usr/etc/apt/sources.list.d/
 TUNA=$HOME/../usr/etc/apt/sources.list.d/tuna.list
 touch $TUNA
 echo '# The termux repository mirror from TUNA:'|tee $TUNA

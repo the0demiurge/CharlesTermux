@@ -27,6 +27,7 @@ libatlas
 mariadb
 mlocate
 mtools
+ncdu
 nmap
 numpy
 octave
